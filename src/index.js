@@ -29,6 +29,7 @@ async function main() {
     // Check if correct
     if (isCorrect(word, guess)) {
       console.log("Correct! 🎉");
+      scrambleWord(word);
       score++;
     } else {
       console.log(`Sorry, the word was "${word}"`);
